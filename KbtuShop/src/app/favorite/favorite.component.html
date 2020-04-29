@@ -1,0 +1,7 @@
+<h3>Избранное</h3>
+
+<div class="favorite-item" *ngFor="let item of products">
+  <span>{{item.name}}</span>
+  <span>{{item.price | currency}}</span>
+  <button (click)=delete(item)>X</button>
+</div>
